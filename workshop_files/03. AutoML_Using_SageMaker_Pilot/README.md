@@ -42,11 +42,3 @@ On the 'deployment and advanced settings' page, select Access from the menu on t
 ![](./../img/3_low_code_2.png)
 * You can dive into the details of individual models by right clicking on the model and choosing Open in model details.
 ![](./../img/3_low_code_1.png)
-* Once the experiment is completed, Autopilot will automatically deploy the best model as a real-time REST endpoint.
-* The Autopilot generated candidate definitions and exploratory data analysis notebooks can be found in the autopilot folder. Note this folder was created at the start of the workshop, when you downloaded the diabetic.zip file
-
-## Online Inference (Real-time)
-* Code sample showing how to invoke the real-time endpoint for online inference with example payloads are contained in the notebook real-time-inference.ipynb in the autopilot folder downloaded at the start of this workshop.
-
-## Offline Inference (Batch)
-* Code sample showing how to kick off a SageMaker Batch Transform job for offline batch inference is contained in the batch-inference.ipynb in the autopilot folder downloaded at the start of this workshop.

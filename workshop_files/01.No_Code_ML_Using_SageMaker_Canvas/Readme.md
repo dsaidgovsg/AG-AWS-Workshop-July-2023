@@ -18,33 +18,20 @@ The sample dataset we are going to use in this lab is a sampled version of the "
 
 The first step is to download the sample dataset. You can download it from [here](diabetic-readmission.csv) to your laptop/local machine.
 
-Go to Amazon S3 from AWS Management console and open "sagemaker-studio-*" folder or any folder that can be accessed by SageMaker Canvas.
+Next we upload the dataset into Canvas. In the Canvas, left side bar select 'Datasets'. Click on Create --> Tabular 
+![](images/create_dataset.png)
 
-In the S3 console, click on the sagemaker-studio-* bucket.
-
-![Studio bucket](images/studio-bucket.png)
-
-Click Upload.
-On the Upload page, drag and drop the diabetes-readmission.csv file you've just downloaded, then click Upload at the bottom of the page. Once the upload is complete, you can now click the top-right Close button. You should now see the file uploaded in your bucket.
-
-![S3 file upload](images/s3-file-upload.png)
+Upload the diabetic-readmission.csv and then click 'Create dataset'. This creates the dataset in Canvas which will be used for training models in the later steps. 
+![](images/create_dataset_2.png)
 
 # Creating model in SageMaker Canvas
+Now, let's go to Amazon SageMaker Canvas back to the 'My Models' section of the web page, by clicking the second button on the left menu.
 
-In SageMaker Canvas, select 'Datasets' from the menu on the left and then click on 'Import'. Click on the 'S3' button and select the diabetes csv file from the bucket that you uploaded teh file to in the previous step.
-Click on 'Import Data'.
+![Canvas](images/my_model.png)
 
-Now, let's go to Amazon SageMaker Canvas back to the Models section of the web page, by clicking the second button on the left menu.
+Click on '+ New model', and provide a name to your model. Once you are satisfied with the model name, click 'Create'
 
-![Canvas](images/canvas-models.png)
-
-Click on + New model, and provide a name to your model.
-
-![Create model](images/create-diabetes-readmission-prediction-model.png)
-
-If this is the first time creating a Canvas model, you will be welcomed by an informative pop-up about how to build your first model in 4 simple steps. You can read this through, then come back to this guide.
-
-![Canvas first model](images/canvas-first-model-popup.png)
+![Create model](images/create_model.png)
 
 ## Import dataset to the model
 
