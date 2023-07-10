@@ -27,9 +27,13 @@
 
 ## Autopilot
 * For the Autopilot experiment, we will be using a pre-transformed dataset which is similar to the result of the transformed features exported via Data Wrangler to S3. To Launch Autopilot on SageMaker Studio, click on File -> New -> Experiment. On the Create experiment page, fill in the details as shown below.
+S3 location `s3://ag-aws-workshop-july23-dev/diabetic-readmission.csv`
 ![](./../img/3_low_code_0.png)
-On the 'deployment and advanced settings' page, select Runtime from the menu on the left and specify 'Max candidates' as 10. The default is 250, but for the purpose of the lab, we limit to 10 candidates to see the results faster. Click on 'Review and Create' and then click on 'Create Experiment'. 
-![](./../img/3_low_code_4.png)
+On the 'Target and Features' page, select Target Column as 'readmitted'.
+![](./../img/3_low_code_7.png)
+On the 'Training method and algorithms' page leave the default 'auto' setting.
+On the 'deployment and advanced settings' page, select Access from the menu on the left and specify 'IAM role' as `arn:aws:iam::820788409827:role/ag-dev-studio-workshop-ExecutionRole`. This role provides permissions for Sagemaker Studio to work with AWS on our behalf.
+![](./../img/3_low_code_8.png)
 * Once the Autopilot experiment starts, you will see it complete stages one by one starting with the pre-processing stage as shown below.
 ![](./../img/3_low_code_5.png)
 * Once the candidate definitions (i.e., 10 feature engineering pipelines) are generated, you will see 2 buttons that are enabled on the right upper corner of the workspace. Clicking those buttons take you to generated notebooks showing the code for feature engineering and data exploration.
