@@ -13,26 +13,6 @@ The sample dataset we are going to use in this lab is a sampled version of the "
 
 (Beata Strack, Jonathan P. DeShazo, Chris Gennings, Juan L. Olmo, Sebastian Ventura, Krzysztof J. Cios, and John N. Clore, “Impact of HbA1c Measurement on Hospital Readmission Rates: Analysis of 70,000 Clinical Database Patient Records,” BioMed Research International, vol. 2014, Article ID 781670, 11 pages, 2014. ). It contains historical data including over fifteen features with patient and hospital outcomes. The dataset contains approximately ~50,000 rows
 
-##  Import the dataset in Canvas and Create model
-
-
-The first step is to download the sample dataset. You can download it from [here](diabetic-readmission.csv) to your laptop/local machine.
-
-Next we upload the dataset into Canvas. In the Canvas, left side bar select 'Datasets'. Click on Create --> Tabular 
-![](images/create_dataset.png)
-
-Upload the diabetic-readmission.csv and then click 'Create dataset'. This creates the dataset in Canvas which will be used for training models in the later steps. 
-![](images/create_dataset_2.png)
-
-# Creating model in SageMaker Canvas
-Now, let's go to Amazon SageMaker Canvas back to the 'My Models' section of the web page, by clicking the second button on the left menu.
-
-![Canvas](images/my_model.png)
-
-Click on '+ New model', and provide a name to your model. Once you are satisfied with the model name, click 'Create'
-
-![Create model](images/create_model.png)
-
 ## Import dataset to the model
 
 In the Model view, you will see four tabs, which correspond to the four steps to create a model and use it to generate predictions: Select, Build, Analyze, Predict. In the first tab, Select, click the radio button to import the diabetes-readmission.csv dataset and choose "Select Dataset" to import the dataset.
