@@ -15,7 +15,7 @@ The sample dataset we are going to use in this lab is a sampled version of the "
 
 ## Import dataset to the model
 
-In the Model view, you will see four tabs, which correspond to the four steps to create a model and use it to generate predictions: Select, Build, Analyze, Predict. In the first tab, Select, click the radio button to import the diabetes-readmission.csv dataset and choose "Select Dataset" to import the dataset.
+In the Model view, you will see four tabs, which correspond to the four steps to create a model and use it to generate predictions: Select, Build, Analyze, Predict. In the first tab, Select, click the radio button to import the `canvas-sample-diabetic-readmission.csv` dataset and choose "Select Dataset" to import the dataset.
 
 ![select dataset](images/import_dataset.png)
 
